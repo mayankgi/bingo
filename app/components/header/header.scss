@@ -1,0 +1,13 @@
+$header-padding: 1.5rem;
+$logo-font-size: 36px;
+$logo-shadow: 1px 1px 1px #888;
+
+.app-header{
+  padding: $header-padding;
+  text-align: center;
+  > .logo{
+    font-size: $logo-font-size;
+    text-shadow: $logo-shadow;
+    font-style: italic;
+  }
+}

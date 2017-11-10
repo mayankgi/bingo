@@ -1,0 +1,54 @@
+//@import 'styling/reset';
+@import 'styling/variables';
+
+body{
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Helvetica';
+  margin: 0px;
+}
+
+#app{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+//Global classes
+input, textarea, select, button{
+  font-size: 1rem;
+}
+.block-input{
+  display: block;
+  height: 30px;
+  width: 100%;
+  border: 1px solid #e8e8e8;
+}
+
+.button-base{
+  padding: 5px 20px;
+  color: $color-white;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-primary{
+  @extend .button-base;
+  background-color: $color-complimentory-blue;
+  cursor: pointer;
+  &:hover{
+    background-color: #2980B9;
+  }
+}
+
+.button-secondary{
+  @extend .button-base;
+  border: 2px solid $color-white;
+  border-radius: 25px;
+  &:hover{
+    background-color: #e8e8e8;
+  }
+}
+
+ul{
+  padding: 0px;
+}

@@ -1,0 +1,14 @@
+//$new-game-form-background:
+@import '../../../../styling/variables.scss';
+
+$new-game-form-background: $color-complimentory-gray-md;
+$new-game-form-padding: .5rem 1.5rem 1.5rem 1.5rem;
+$new-game-form-input-margin: 0 0 .75rem 0;
+
+.new-game-form{
+  background-color:$new-game-form-background;
+  padding: $new-game-form-padding;
+  > input{
+    margin: $new-game-form-input-margin;
+  }
+}

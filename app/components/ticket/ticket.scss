@@ -1,0 +1,54 @@
+.ticket{
+  border: 1px solid #888;
+  > h3{
+    text-align: center;
+  }
+  > ul{
+    display: inline-grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    list-style: none;
+    justify-items:center;
+    align-items: center;
+    > li{
+      background-color: #444;
+      color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      padding: 0px;
+      padding-top: 12px;
+      box-sizing: border-box;
+      &:nth-child(even) {
+        background-color: #ccc;
+        color: #000;
+      }
+      &.cross {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        &::before, &::after {
+          content: '';
+          width: 100%;
+          position: absolute;
+          right: 0;
+          top: 50%;
+        }
+        &::before {
+          border-bottom: 5px solid #A93226;
+          -webkit-transform: skewY(-50deg);
+          transform: skewY(-50deg);
+        }
+        &::after {
+          border-bottom: 5px solid #A93226;
+          -webkit-transform: skewY(50deg);
+          transform: skewY(50deg);
+        }
+      }
+    }
+  }
+
+}

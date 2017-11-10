@@ -1,0 +1,14 @@
+.player-room{
+  padding: 1.5rem;
+  > .tickets-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    >li{
+      margin: 2rem;
+    }
+  }
+  > .numbers-drawn{
+    margin-top: 2.5rem;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../styling/variables';
+@import '../../styling/mixins';
+
+$game-tile-padding: .675rem;
+$game-tile-width: 150px;
+
+.game-tile{
+  border: 1px solid $color-complimentory-gray-dark;
+  padding: $game-tile-padding;
+  width: $game-tile-width;
+  &:hover{
+    background-color:$color-white-md;
+  }
+  &:active{
+    background-color: $color-white-dark;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    h3{
+      @include text-ellipsis;
+    }
+    .game-created-by{
+      font-size: 14px;
+      color: $color-complimentory-gray-dark;
+      padding-bottom: 1rem;
+      @include text-ellipsis;
+    }
+  }
+}
