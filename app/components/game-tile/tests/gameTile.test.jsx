@@ -16,6 +16,7 @@ describe('<GameTile />', ()=>{
 
   let component;
   const id = 'HNQ', title = 'GameTitle', createdBy = 'Mayank Gupta';
+  
   beforeEach(()=>
     component = shallow(<GameTile id={id} data={{title, createdBy}} />)
   );

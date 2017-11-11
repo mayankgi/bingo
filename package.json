@@ -9,6 +9,7 @@
     "test:watch": "cross-env NODE_ENV=testing karma start --single-run=false",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --content-base public/ --progress --colors",
     "build": "cross-env NODE_ENV=production webpack",
+    "prebuild": "flow && npm run test",
     "flow": "flow",
     "setup": "npm install -g yarn && yarn install && flow-typed install",
     "update-flow-typed": "flow-typed install"

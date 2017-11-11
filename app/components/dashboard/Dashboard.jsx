@@ -1,3 +1,5 @@
+//@flow
+
 import './dashboard.scss';
 import React from 'react';
 

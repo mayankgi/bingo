@@ -1,5 +1,11 @@
-export const getAllGames = data => {
+//@flow
+
+import {ALL_GAMES_ACTION_TYPE} from './../types/games.types';
+
+export const ALL_GAMES_ACTION_SERVER = 'server/getAllGames';
+
+export const getAllGames = ():ALL_GAMES_ACTION_TYPE => {
   return {
-    type: 'server/getAllGames'
+    type: ALL_GAMES_ACTION_SERVER
   }
 }

@@ -1,15 +1,20 @@
+//@flow
 import './managerRoom.scss';
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 import * as actions from './actions/managerRoom.actions';
+import {MANAGER_ROOM_PROPS_TYPE} from './types/managerRoom.types';
+
 import Header from 'components/header/Header';
-//Components
 import NumbersList from 'components/numbers-list/NumbersList';
 
 export class ManagerRoom extends Component{
 
-  constructor(props){
+  props: MANAGER_ROOM_PROPS_TYPE;
+  generateNewNumber: Function;
+
+  constructor(props:MANAGER_ROOM_PROPS_TYPE){
     super(props);
     this.generateNewNumber = this.generateNewNumber.bind(this);
   }

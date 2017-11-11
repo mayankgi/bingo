@@ -1,7 +1,9 @@
+//@flow
 import './gameTile.scss';
 import React from 'react';
+import {GAME_TILE_TYPE_PROPS} from './types/gameTile.types';
 
-export default (props) => {
+export default (props:GAME_TILE_TYPE_PROPS) => {
   return (
     <div class="game-tile">
       <a href={`/#/player?id=${props.id}`}>

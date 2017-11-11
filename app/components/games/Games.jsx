@@ -1,12 +1,18 @@
+//@flow
+
 import './games.scss';
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import { browserHistory } from 'react-router'
 
 import * as actions from './actions/games.actions';
+import {GAMES_PROPS_TYPE} from './types/games.types';
+
 import GameTile from 'components/game-tile/GameTile';
 
 export class Games extends Component{
+
+  props: GAMES_PROPS_TYPE;
 
   componentWillMount(){
     const {dispatch} = this.props;

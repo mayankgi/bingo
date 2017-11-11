@@ -1,3 +1,4 @@
+//@flow
 import './header.scss';
 
 import React from 'react';
