@@ -1,8 +1,10 @@
 import {SELECT_NUMBER} from './../actions/playerRoom.actions';
 
+export const TICKETS_CREATED_CLIENT = 'client/ticketsCreated';
+
 export const tickets = (state = {}, action) => {
   switch (action.type) {
-    case 'client/ticketsCreated':
+    case TICKETS_CREATED_CLIENT:
       return {...action.payload}
     case SELECT_NUMBER:
       const {id, number} = action.payload;

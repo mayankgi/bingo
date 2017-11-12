@@ -1,7 +1,11 @@
+//@flow
+
 import './numbersList.scss';
 import React from 'react';
 
-export default props => {
+import {NUMBER_LIST_PROPS_TYPE} from './types/numberList.types';
+
+export default (props:NUMBER_LIST_PROPS_TYPE) => {
 
   const renderList = numbers => numbers.map(number=><li>{number}</li>);
 

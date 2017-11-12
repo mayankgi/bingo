@@ -1,9 +1,14 @@
+//@flow
+
 import './ticket.scss';
 import React from 'react';
 
-export default (props) => {
+import {TICKET_PROPS_TYPE, TICKET_NUMBER_TYPE} from './types/ticket.types';
 
-  const renderNumbers = numbers =>{
+
+export default (props:TICKET_PROPS_TYPE) => {
+
+  const renderNumbers = (numbers:TICKET_NUMBER_TYPE) =>{
     return Object.keys(numbers).map(number=>{
       return (
         <li

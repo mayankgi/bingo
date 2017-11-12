@@ -1,7 +1,11 @@
+//@flow
+
 import './newGameForm.scss'
 import React from 'react';
 
-export default props => {
+import {NEW_GAME_FORM_PROPS_TYPE} from './../../types/newGame.types';
+
+export default (props:NEW_GAME_FORM_PROPS_TYPE) => {
   return (
     <form onSubmit={props.onSubmit} class="new-game-form">
       <h2>Create New Game</h2>
